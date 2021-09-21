@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary-color">
         <div class="container-fluid mg-100">
             <a href="#" class="navbar-brand">Hotelugar</a>
@@ -43,6 +44,62 @@
             </div>
         </div>
     </nav>
+
+    <!-- Container principal -->
+    <div class="main-container">
+        <h1>Entre em contato</h1>
+        <p>Para qualquer dúvida, sugestão ou reclamação, preencha o formulário abaixo que entraremos em contato o mais rápido possível.</p>
+    </div>
+
+    <!-- Formulário -->
+    <form class="main-form" id="contact-form"> 
+        <div class="mb-3">
+            <label class="form-label">Nome</label>
+            <input id="contact-form-name" type="text" class="form-control" placeholder="Matheus da Silva">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">E-mail</label>
+            <input id="contact-form-email" type="email" class="form-control" placeholder="email@exemplo.com">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Assunto</label>
+            <input id="contact-form-subject" type="text" class="form-control" placeholder="Sugestão, dúvida, reclamação...">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Mensagem</label>
+            <textarea id="contact-form-message" type="text" class="form-control" placeholder="Informe a sua mensagem aqui" rows="8"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <button class="btn" type="submit">Enviar mensagem</button>
+        </div>
+    </form>
+
+    <!-- Footer -->
+    <div class="container-fluid bfooter">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">© 2021 Hotelugar</p>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link px-2 text-muted">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link px-2 text-muted">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link px-2 text-muted">Contato</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
