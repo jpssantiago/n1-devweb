@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', Arial;
+}
+
+:root {
+    --primaryColor: #3574D8;
+    --primaryGreen: #00BB9E;
+}
+
+.bg-primary-color {
+    background-color: var(--primaryColor);
+}
+
+.primary-color {
+    color: var(--primaryColor);
+}
+
+.navbar {
+    padding: 0 188px;
+
+    height: 80px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.main-container {
+    padding: 50px 200px;
+
+    color: #FFFFFF;
+}
+
+.main-container > h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main-container > p {
+    font-size: 16px;
+    font-weight: normal;
+
+    margin: 20px 0;
+}
+
+.main-container > button {
+    height: 50px;
+
+    color: #FFFFFF;
+    background-color: var(--primaryGreen);
+
+    transition: all .2s linear;
+}
+
+.main-container > button:hover {
+    color: var(--primaryGreen);
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0 100px;
+    }
+
+    .main-container {
+        padding: 50px 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .main-container {
+        padding: 50px 20px;
+    }
+}
