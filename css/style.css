@@ -103,8 +103,6 @@
     height: 36px;
 
     margin-bottom: 10px;
-
-    background: blue;
 }
 
 .overflow-card-text {
@@ -119,7 +117,63 @@
     color: var(--secondaryTextColor);
 }
 
+/* Seção dos hotéis populares */
+.popular-hotels-section {
+    padding: 50px 200px;
+}
+
+.popular-hotels-section > h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popular-hotels-section-grid {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.popular-hotel-item {
+    /* flex: 1;
+    min-width: 220px; */
+    height: 333px;
+
+    background: grey;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+
+    transition: all .3s linear;
+}
+
+.popular-hotel-item:hover {
+    transform: scale(1.02);
+}
+
 /* Responsividade */
+@media (max-width: 1500px) {
+    .popular-hotels-section-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1300px) {
+    .popular-hotels-section-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1100px) {
+    .popular-hotels-section-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 1024px) {
     .navbar {
         padding: 0 100px;
@@ -132,6 +186,10 @@
     .overflow-container {
         margin: 0 100px;
         margin-top: -75px;
+    }
+
+    .popular-hotels-section {
+        padding: 50px 100px;
     }
 }
 
@@ -147,5 +205,15 @@
     .overflow-container {
         margin: 0 20px;
         margin-top: -75px;
+    }
+
+    .popular-hotels-section {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .popular-hotels-section-grid {
+        grid-template-columns: 1fr;
     }
 }
