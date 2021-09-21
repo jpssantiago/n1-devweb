@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Bem-vindo</title>
+    <title>Hotelugar | Bem-vindo</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary-color">
         <div class="container-fluid mg-100">
-            <a href="#" class="navbar-brand">Logo</a>
+            <a href="#" class="navbar-brand">Hotelugar</a>
 
             <div class="d-flex">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -46,34 +46,163 @@
     <div class="main-container bg-primary-color">
         <h1>Encontre o melhor hotel para a sua viagem</h1>
         <p>Procure os hotéis por preço, classificação ou duração de sua estadia.</p>
-        <button type="button" class="btn bg-primary-color">Buscar agora</button>
+        <a class="btn bg-primary-color" href="#popular-hotels">Procurar hotéis</a>
     </div>
 
     <div class="overflow-container">
         <div class="overflow-card">
             <img class="overflow-card-icon" src="icons/star.png">
-            <p class="overflow-card-text">Lorem ipsum dolor sit amet, consectetur amet.</p>
+            <p class="overflow-card-text">Garanta o melhor hotel para a sua viagem</p>
         </div>
 
         <div class="overflow-card">
             <img class="overflow-card-icon" src="icons/star.png">
-            <p class="overflow-card-text">Lorem ipsum dolor sit amet, consectetur amet.</p>
+            <p class="overflow-card-text">Os melhores preços e acomodações</p>
         </div>
 
         <div class="overflow-card">
             <img class="overflow-card-icon" src="icons/star.png">
-            <p class="overflow-card-text">Lorem ipsum dolor sit amet, consectetur amet.</p>
+            <p class="overflow-card-text">Atendimento VIP e especializado</p>
         </div>
 
         <div class="overflow-card">
             <img class="overflow-card-icon" src="icons/star.png">
-            <p class="overflow-card-text">Lorem ipsum dolor sit amet, consectetur amet.</p>
+            <p class="overflow-card-text">Sem burocracia, filas de espera ou tarifas escondidas</p>
         </div>
     </div>
 
-    <div class="popular-hotels-section">
+    <div class="popular-hotels-section" id="#popular-hotels">
         <h1 class="section-title">Hotéis populares</h1>
-        
+
+        <div class="popular-hotels-grid">
+            <!-- Hotél -->
+            <div class="card popular-hotel-card">
+                <img src="./images/barbados.jpg" alt="" class="card-img-top popular-hotel-card-image">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h5 class="card-title popular-hotel-card-title">Barbados</h5>
+                            <p class="card-text popular-hotel-card-text">4 noites, 3 dias</p>
+                        </div>
+                        <img src="./icons/star.png" alt="" class="popular-hotel-card-rating-icon">
+                        <p class="popular-hotel-card-rating-value">4.5</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary popular-hotel-card-button">R$ 908,00</button>
+                </div>
+            </div>
+
+            <!-- Hotél -->
+            <div class="card popular-hotel-card">
+                <img src="./images/maceio.jpg" alt="" class="card-img-top popular-hotel-card-image">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h5 class="card-title popular-hotel-card-title">Maceió</h5>
+                            <p class="card-text popular-hotel-card-text">4 noites, 3 dias</p>
+                        </div>
+                        <img src="./icons/star.png" alt="" class="popular-hotel-card-rating-icon">
+                        <p class="popular-hotel-card-rating-value">4.1</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary popular-hotel-card-button">R$ 476,00</button>
+                </div>
+            </div>
+
+            <!-- Hotél -->
+            <div class="card popular-hotel-card">
+                <img src="./images/salvador.jpg" alt="" class="card-img-top popular-hotel-card-image">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h5 class="card-title popular-hotel-card-title">Salvador</h5>
+                            <p class="card-text popular-hotel-card-text">3 noites, 2 dias</p>
+                        </div>
+                        <img src="./icons/star.png" alt="" class="popular-hotel-card-rating-icon">
+                        <p class="popular-hotel-card-rating-value">4.7</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary popular-hotel-card-button">R$ 385,00</button>
+                </div>
+            </div>
+
+            <!-- Hotél -->
+            <div class="card popular-hotel-card">
+                <img src="./images/nova_iorque.jpeg" alt="" class="card-img-top popular-hotel-card-image">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h5 class="card-title popular-hotel-card-title">Nova Iorque</h5>
+                            <p class="card-text popular-hotel-card-text">5 noites, 4 dias</p>
+                        </div>
+                        <img src="./icons/star.png" alt="" class="popular-hotel-card-rating-icon">
+                        <p class="popular-hotel-card-rating-value">4.8</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary popular-hotel-card-button">R$ 4.126,00</button>
+                </div>
+            </div>
+
+            <!-- Hotél -->
+            <div class="card popular-hotel-card">
+                <img src="./images/nairobi.jpg" alt="" class="card-img-top popular-hotel-card-image">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h5 class="card-title popular-hotel-card-title">Nairóbi</h5>
+                            <p class="card-text popular-hotel-card-text">6 noites, 5 dias</p>
+                        </div>
+                        <img src="./icons/star.png" alt="" class="popular-hotel-card-rating-icon">
+                        <p class="popular-hotel-card-rating-value">4.1</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary popular-hotel-card-button">R$ 3.312,00</button>
+                </div>
+            </div>
+
+            <!-- Hotél -->
+            <div class="card popular-hotel-card">
+                <img src="./images/bahamas.jpg" alt="" class="card-img-top popular-hotel-card-image">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h5 class="card-title popular-hotel-card-title">Bahamas</h5>
+                            <p class="card-text popular-hotel-card-text">7 noites, 6 dias</p>
+                        </div>
+                        <img src="./icons/star.png" alt="" class="popular-hotel-card-rating-icon">
+                        <p class="popular-hotel-card-rating-value">4.9</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary popular-hotel-card-button">R$ 1.900,00</button>
+                </div>
+            </div>
+
+            <!-- Hotél -->
+            <div class="card popular-hotel-card">
+                <img src="./images/atlanta.jpg" alt="" class="card-img-top popular-hotel-card-image">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h5 class="card-title popular-hotel-card-title">Atlanta</h5>
+                            <p class="card-text popular-hotel-card-text">5 noites, 4 dias</p>
+                        </div>
+                        <img src="./icons/star.png" alt="" class="popular-hotel-card-rating-icon">
+                        <p class="popular-hotel-card-rating-value">4.9</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary popular-hotel-card-button">R$ 2.058,00</button>
+                </div>
+            </div>
+
+            <!-- Hotél -->
+            <div class="card popular-hotel-card">
+                <img src="./images/zurique.jpg" alt="" class="card-img-top popular-hotel-card-image">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h5 class="card-title popular-hotel-card-title">Zurique</h5>
+                            <p class="card-text popular-hotel-card-text">4 noites, 3 dias</p>
+                        </div>
+                        <img src="./icons/star.png" alt="" class="popular-hotel-card-rating-icon">
+                        <p class="popular-hotel-card-rating-value">4.6</p>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary popular-hotel-card-button">R$ 3.395,00</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
