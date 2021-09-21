@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* Configurações básicas */
 * {
     font-family: 'Roboto', Arial;
 }
@@ -7,6 +8,8 @@
 :root {
     --primaryColor: #3574D8;
     --primaryGreen: #00BB9E;
+
+    --secondaryTextColor: #1C1C1C;
 }
 
 .bg-primary-color {
@@ -17,6 +20,8 @@
     color: var(--primaryColor);
 }
 
+
+/* Navbar */
 .navbar {
     padding: 0 188px;
 
@@ -27,8 +32,9 @@
     font-weight: bold;
 }
 
+/* Container principal da página de início */
 .main-container {
-    padding: 50px 200px;
+    padding: 50px 200px 125px 200px;
 
     color: #FFFFFF;
 }
@@ -59,13 +65,73 @@
     background-color: #FFFFFF;
 }
 
+/* Container que sobrepõe o container principal da página de início */
+.overflow-container {
+    margin: 0 200px;
+    margin-top: -75px;
+
+    /* height: 150px; */
+
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.overflow-card {
+    /* width: 100%; */
+    height: 150px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.overflow-card-icon {
+    width: 36px;
+    height: 36px;
+
+    margin-bottom: 10px;
+
+    background: blue;
+}
+
+.overflow-card-text {
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 10px;
+
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--secondaryTextColor);
+}
+
+/* Responsividade */
 @media (max-width: 1024px) {
     .navbar {
         padding: 0 100px;
     }
 
     .main-container {
-        padding: 50px 100px;
+        padding: 50px 100px 125px 100px;
+    }
+
+    .overflow-container {
+        margin: 0 100px;
+        margin-top: -75px;
     }
 }
 
@@ -75,6 +141,11 @@
     }
 
     .main-container {
-        padding: 50px 20px;
+        padding: 50px 20px 125px 20px;
+    }
+
+    .overflow-container {
+        margin: 0 20px;
+        margin-top: -75px;
     }
 }
