@@ -1,0 +1,17 @@
+.bg-primary-color {
+    background-color: #3574D8;
+}
+
+.primary-color {
+    color: #3574D8;
+}
+
+.navbar {
+    padding: 0 200px;
+
+    height: 80px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
