@@ -46,11 +46,15 @@
 .team-section-grid {
     margin-top: 10px;
 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
     column-gap: 40px;
+    row-gap: 40px;
 }
 
 .devcard {
-    width: 300px;
+    max-width: 300px;
     height: 400px;
 
     border-radius: 5px;
@@ -84,18 +88,41 @@
     color: #1C1C1C;
 }
 
-.devcard > div > div > img {
+.devcard > div > div > a {
+    text-decoration: none;
+}
+
+.devcard > div > div > a > img {
     margin: 10px 5px 10px 5px;
+
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {
     .main-container {
         padding: 70px 100px;
     }
+
+    .team-section {
+        margin: 50px 100px;
+    }
 }
 
 @media (max-width: 800px) {
     .main-container {
         padding: 70px 20px;
+    }
+
+    .team-section {
+        margin: 50px 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .team-section-grid {
+        grid-template-columns: 1fr;
     }
 }
