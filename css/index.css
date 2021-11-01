@@ -115,6 +115,13 @@
     border-top-right-radius: 5px;
 }
 
+.popular-hotel-card-body {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
 .popular-hotel-card-button {
     color: var(--primaryGreen);
     border: 1px solid var(--primaryGreen);
