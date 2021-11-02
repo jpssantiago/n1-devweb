@@ -20,7 +20,7 @@ const HotelTemplate = ({ id, name, image, description, rating }) => `
         <div class="hotel-item-content">
             <span>
                 <h1>${name}</h1>
-                <img src="icons/star.png" alt="Classificação">
+                <img src="images/icons/star.png" alt="Classificação">
                 <p>${rating}</p>
             </span>
             <p>${description}</p>
