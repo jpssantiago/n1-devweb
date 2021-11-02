@@ -1,8 +1,9 @@
 class Destination {
-    constructor(id, city, country) {
+    constructor(id, city, country, image) {
         this.id = id;
         this.city = city;
         this.country = country;
+        this.image = image;
     }
 }
 
@@ -19,14 +20,13 @@ class Hotel {
 }
 
 const destinations = [
-    new Destination(0, 'Bridgetown', 'Barbados'),
-    new Destination(1, 'Maceió', 'Brazil'),
-    new Destination(2, 'Salvador', 'Brazil'),
-    new Destination(3, 'Nova Iorque', 'Estados Unidos da América'),
-    new Destination(4, 'Nairóbi', 'Quênia'),
-    new Destination(5, 'Nassau', 'Bahamas'),
-    new Destination(6, 'Atlanta', 'Estados Unidos da América'),
-    new Destination(7, 'Zurique', 'Suíça'),
+    new Destination(3, 'São Paulo', 'Brasil', 'nova_iorque.png'),
+    new Destination(2, 'Salvador', 'Brasil', 'salvador.png'),
+    new Destination(1, 'Maceió', 'Brasil', 'maceio.png'),
+    new Destination(0, 'Nassau', 'Bahamas', 'nassau.png'),
+    new Destination(3, 'Nova Iorque', 'EUA', 'nova_iorque.png'),
+    new Destination(3, 'Atlanta', 'EUA', 'nova_iorque.png'),
+    new Destination(3, 'Chicago', 'EUA', 'nova_iorque.png'),
 ];
 
 const hotels = [
@@ -39,6 +39,15 @@ const hotels = [
     new Hotel(6, 'Holiday Inn Express and Suites Atlanta Downtown', 1014, 4.6, 'Atlanta', 'EUA', 'atlanta.jpg'),
     new Hotel(7, 'Wellenberg Boutique Hotel', 1602, 4.6, 'Zurique', 'Suíça', 'zurique.jpg'),
 ];
+
+const DestinationCardTemplate = ({ image, city }) => `
+    <div class="popular-destinations-card">
+        <img class="popular-destinations-card-image" src="images/cities/${image}" alt="${city}">
+        <div class="popular-destinations-card-container">
+            <p>${city}</p>
+        </div>
+    </div>
+`;
 
 const HotelCardTemplate = ({ id, image, name, rating, price, city, country }) => `
     <div class="card popular-hotel-card" id="${id}">
@@ -63,7 +72,16 @@ const HotelCardTemplate = ({ id, image, name, rating, price, city, country }) =>
 `;
 
 const loadDestinations = () => {
+    $('.popular-destinations-list').append(destinations.map(DestinationCardTemplate))
+}
+
+const loadHotels = () => {
     $('.popular-hotels-grid').html(hotels.map(HotelCardTemplate));
 }
 
 loadDestinations();
+loadHotels();
+
+$('#popular-destinations-carousel').carousel({
+    interval: 10000
+})
