@@ -1,17 +1,10 @@
 const handleContactMailSubmit = event => {
     event.preventDefault();
 
-    const name = document.getElementById('contact-form-name').value;
-    const email = document.getElementById('contact-form-email').value;
-    const subject = document.getElementById('contact-form-subject').value;
-    const message = document.getElementById('contact-form-message').value;
+    const name = $('#contact-form-name').val();
+    const email = $('#contact-form-email').val();
+    const subject = $('#contact-form-subject').val();
+    const message = $('#contact-form-message').val();
     
-    alert(`
-        Nome: ${name}
-        E-mail: ${email}
-        Assunto: ${subject}
-        Mensagem: ${message}
-    `);
+    window.open(`mailto:${email}?subject=${name}: ${subject}&body=${message}`);
 }
-
-document.getElementById('contact-form').addEventListener('submit', handleContactMailSubmit);
