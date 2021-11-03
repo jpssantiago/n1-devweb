@@ -27,7 +27,7 @@ const HotelTemplate = ({ id, name, image, description, rating }) => `
         </div>
 
         <div class="hotel-item-actions">
-            <p>Preço total (sem impostos)</p>
+            <p>Quartos a partir de</p>
             <h1>R$ ${window.getLowestRoomPrice(id)}</h1>
             <button 
                 class="btn btn-outline-primary" 
