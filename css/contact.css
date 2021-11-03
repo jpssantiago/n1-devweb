@@ -38,7 +38,7 @@
     padding: 50px 0;
 }
 
-.main-form > div > input {
+.main-form > div > input, .main-form > div > select {
     width: 350px;
 }
 
