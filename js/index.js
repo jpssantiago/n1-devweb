@@ -16,7 +16,7 @@ const HotelCardTemplate = ({ id, image, name, rating, location }) => `
                     <h5 class="card-title popular-hotel-card-title">${name}</h5>
                     <p class="card-text popular-hotel-card-text">${location.city}, ${location.country}</p>
                 </div>
-                <img src="images/icons/star.png" alt="" class="popular-hotel-card-rating-icon">
+                <img src="images/icons/star.png" alt="Classificação do Hotel" class="popular-hotel-card-rating-icon">
                 <p class="popular-hotel-card-rating-value">${rating}</p>
             </div>
             <button 

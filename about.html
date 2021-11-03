@@ -9,21 +9,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
 
-    <title>Hotelugar | Contato</title>
+    <title>Hotelugar</title>
 </head>
 <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-color">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-color" role="navigation">
         <div class="container-fluid mg-100">
-            <a href="#" class="navbar-brand">Hotelugar</a>
+            <a href="./index.html" class="navbar-brand">Hotelugar</a>
 
             <div class="d-flex">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="navbar-item">
@@ -39,6 +33,15 @@
                         </li>
                     </ul>
                 </div>
+
+                <button 
+                    class="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navbarNavDropdown"
+                    type="button"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </div>
     </nav>
@@ -58,7 +61,7 @@
 
         <div class="team-section-grid">
             <div class="card devcard">
-                <img src="https://github.com/jpssantiago.png" alt="" class="card-img-top">
+                <img src="https://github.com/jpssantiago.png" alt="GitHub" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">João Pedro Terra Santiago</h5>
                     <p class="card-text">Desenvolvedor front-end</p>
@@ -70,7 +73,7 @@
             </div>
 
             <div class="card devcard">
-                <img src="https://github.com/JoPeGoCu.png" alt="" class="card-img-top">
+                <img src="https://github.com/JoPeGoCu.png" alt="GitHub" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">João Pedro Gonçalves da Cruz</h5>
                     <p class="card-text">Desenvolvedor front-end</p>
@@ -102,5 +105,9 @@
             </ul>
         </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
