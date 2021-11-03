@@ -39,6 +39,11 @@
 }
 
 .main-form > div > input, .main-form > div > select {
+    min-width: 350px;
+    width: 100%;
+}
+
+.main-form > div > select > option {
     width: 350px;
 }
 
