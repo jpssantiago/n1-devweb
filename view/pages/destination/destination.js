@@ -31,7 +31,7 @@ const HotelTemplate = ({ id, name, image, description, rating }) => `
             <h1>R$ ${window.getLowestRoomPrice(id)}</h1>
             <button 
                 class="btn btn-outline-primary" 
-                onclick="window.location.href = '../hotel/hotel.html?id=${id}'"
+                onclick="window.location.href = '../hotel/hotel.php?id=${id}'"
                 >Ver detalhes
             </button>
         </div>
@@ -43,6 +43,6 @@ const loadHotels = () => {
     $('.hotel-list').html(hotels.map(HotelTemplate));
 }
 
-getDestinationFromParams();
-loadDestinationData();
-loadHotels();
+// getDestinationFromParams();
+// loadDestinationData();
+// loadHotels();

@@ -1,5 +1,5 @@
 const DestinationCardTemplate = ({ id, image, city }) => `
-    <div class="popular-destinations-card" onclick="window.location.href = '../destination/destination.html?id=${id}'">
+    <div class="popular-destinations-card" onclick="window.location.href = '../destination/destination.php?id=${id}'">
         <img class="popular-destinations-card-image" src="../../images/cities/${image}" alt="${city}">
         <div class="popular-destinations-card-container">
             <p>${city}</p>
@@ -22,7 +22,7 @@ const HotelCardTemplate = ({ id, image, name, rating, location }) => `
             <button 
                 type="button"
                 class="btn btn-outline-primary popular-hotel-card-button"
-                onclick="window.location.href = '../hotel/hotel.html?id=${id}'"
+                onclick="window.location.href = '../hotel/hotel.php?id=${id}'"
                 >R$ ${new Intl.NumberFormat().format(window.getLowestRoomPrice(id))}
             </button>
         </div>
@@ -37,5 +37,5 @@ const loadHotels = () => {
     $('.popular-hotels-grid').html(window.hotels.map(HotelCardTemplate));
 }
 
-loadDestinations();
-loadHotels();
+// loadDestinations();
+// loadHotels();
