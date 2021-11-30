@@ -62,8 +62,9 @@
                     <div class="room-item-actions">
                         <p>Preço total (sem impostos)</p>
                         <h1>R$ $price</h1>
-                        <button 
-                            class="btn btn-outline-primary active-room" 
+                        <button
+                            id="$id"
+                            class="btn btn-outline-primary btn-selected-room" 
                             onclick="selectRoom($id)"
                             >Reservar agora
                         </button>
