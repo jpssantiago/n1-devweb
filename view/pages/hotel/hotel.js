@@ -10,7 +10,7 @@ const getHotelFromParams = () => {
 
 const RoomItemTemplate = ({ id, name, capacity, description, price, image }) => `
     <div class="room-item">
-        <img class="room-item-img" src="images/rooms/${image}" alt="${name}">
+        <img class="room-item-img" src="../../images/rooms/${image}" alt="${name}">
 
         <div class="room-item-content">
             <h1>${name}</h1>
@@ -35,7 +35,7 @@ const loadRooms = () => {
 }
 
 const loadHotelData = () => {
-    $('.main-image').attr('src', `images/hotels/${hotel.id}/${hotel.image}`);
+    $('.main-image').attr('src', `../../images/hotels/${hotel.id}/${hotel.image}`);
     $('.hotel-name').text(hotel.name);
     $('.hotel-rating-value').text(hotel.rating);
     $('.hotel-location').text(`${hotel.location.city}, ${hotel.location.country}`);

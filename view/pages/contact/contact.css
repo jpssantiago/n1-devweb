@@ -1,0 +1,108 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 70px 200px;
+
+    background: var(--primaryColor);
+}
+
+.main-container > h1 {
+    font-size: 38px;
+    font-weight: bold;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.main-container > p {
+    font-size: 16px;
+    font-weight: normal;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, .8);
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 50px 0;
+}
+
+.main-form > div > input, .main-form > div > select {
+    min-width: 350px;
+    width: 100%;
+}
+
+.main-form > div > select > option {
+    width: 350px;
+}
+
+.main-form > div > textarea {
+    width: 350px;
+}
+
+.main-form > div > button {
+    height: 50px;
+    width: 350px;
+    
+    color: #FFFFFF;
+    background: var(--primaryColor);
+
+    transition: all .2s linear;
+}
+
+.main-form > div > button:hover {
+    color: var(--primaryColor);
+    background: #FFFFFF;
+    border: 1px solid var(--primaryColor);
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        padding: 70px 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        padding: 70px 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .main-form > div > input {
+        width: 250px;
+    }
+    
+    .main-form > div > textarea {
+        width: 250px;
+    }
+    
+    .main-form > div > button {
+        width: 250px;
+    }
+}
+
+@media (max-width: 250px) {
+    .main-form > div > input {
+        width: 150px;
+    }
+    
+    .main-form > div > textarea {
+        width: 150px;
+    }
+    
+    .main-form > div > button {
+        width: 150px;
+    }
+}

@@ -15,12 +15,12 @@ const loadDestinationData = () => {
 
 const HotelTemplate = ({ id, name, image, description, rating }) => `
     <div class="hotel-item">
-        <img class="hotel-item-img" src="images/hotels/${id}/${image}" alt="${name}">
+        <img class="hotel-item-img" src="../../images/hotels/${id}/${image}" alt="${name}">
 
         <div class="hotel-item-content">
             <span>
                 <h1>${name}</h1>
-                <img src="images/icons/star.png" alt="Classificação">
+                <img src="../../images/icons/star.png" alt="Classificação">
                 <p>${rating}</p>
             </span>
             <p>${description}</p>
@@ -31,7 +31,7 @@ const HotelTemplate = ({ id, name, image, description, rating }) => `
             <h1>R$ ${window.getLowestRoomPrice(id)}</h1>
             <button 
                 class="btn btn-outline-primary" 
-                onclick="window.location.href = 'hotel.html?id=${id}'"
+                onclick="window.location.href = '../hotel/hotel.html?id=${id}'"
                 >Ver detalhes
             </button>
         </div>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Configurações básicas */
+* {
+    font-family: 'Roboto', Arial;
+}
+
+:root {
+    --primaryColor: #3574D8;
+    --primaryGreen: #00BB9E;
+
+    --primaryTextColor: #1C1C1C;
+    --secondaryTextColor: #434343;
+}
+
+.bg-primary-color {
+    background-color: var(--primaryColor);
+}
+
+.primary-color {
+    color: var(--primaryColor);
+}
+
+/* Navbar */
+.navbar {
+    padding: 0 188px;
+
+    height: 80px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Footer */
+.bfooter {
+    padding: 0 200px;
+}
+
+.bfooter > footer > p {
+    width: 200px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .25);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, .4);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0 100px;
+    }
+
+    .bfooter {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .bfooter {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .bfooter > footer {      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bfooter > footer > p {
+        text-align: center;
+    }
+}
