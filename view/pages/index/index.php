@@ -86,7 +86,7 @@
         <div class="popular-destinations-list">
             <?php 
 
-            include_once('../../../controller/destination_controller.php');
+            include_once('../../../controller/controller.php');
             $destinationModel->getAllDestinations($connection);
 
             ?>
@@ -97,7 +97,14 @@
     <div class="index-section popular-hotels-section" id="popular-hotels">
         <h1 class="section-title">Hotéis em alta</h1>
 
-        <div class="popular-hotels-grid"></div>
+        <div class="popular-hotels-grid">
+            <?php 
+
+            include_once('../../../controller/controller.php');
+            $hotelModel->getAllHotels($connection);
+
+            ?>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -125,7 +132,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <script src="../../js/data.js"></script>
     <script src="./index.js"></script>
 </body>
 

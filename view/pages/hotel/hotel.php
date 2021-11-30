@@ -48,50 +48,10 @@
     </nav>
 
     <div class="main-container">
-        <img class="main-image" src="" alt="Imagem principal do Hotel">
-
-        <span class="hotel-name-row">
-            <h1 class="hotel-name">{name}</h1>
-            <img class="hotel-rating-img" src="../../images/icons/star.png" alt="Classificação">
-            <p class="hotel-rating-value">{rating}</p>
-        </span>
-        <p class="hotel-location">{location}</p>
-        <p class="hotel-description">{description}</p>
-
-        <h1 class="options-label">Suas opções para este hotel</h1>
-        <div class="options-form">
-            <form>
-                <div class="form-group options-group">
-                    <label for="checkinDate">Check-in</label>
-                    <input type="text" placeholder="Entrada" id="checkInDatePicker" class="form-control">
-                </div>
-    
-                <div class="form-group options-group">
-                    <label for="checkoutDate">Check-out</label>
-                    <input type="text" placeholder="Saída" id="checkOutDatePicker" class="form-control">
-                </div>
-    
-                <div class="form-group options-group">
-                    <label for="guestCount">Hóspedes</label>
-                    <select class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                    </select>
-                </div>
-            </form>
-
-            <button id="checkoutButton" onclick="handleCheckoutClick()" class="btn btn-outline-primary">Ir para o pagamento</button>
-        </div>
-
-        <div class="room-list"></div>
+        <?php
+            include_once('../../../controller/controller.php');
+            $hotelModel->getHotelById($connection, $_GET['id']);
+        ?>
     </div>
 
     <!-- Footer -->
@@ -123,7 +83,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.pt-BR.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>   
 
-    <script src="../../js/data.js"></script>
     <script src="./hotel.js"></script>
 </body>
 </html>
