@@ -55,20 +55,20 @@
     </div>
 
     <!-- Formulário -->
-    <form class="main-form" id="contact-form" onsubmit="handleContactMailSubmit(event)"> 
+    <form class="main-form" id="contact-form" method="post" action="../../../controller/controller.php"> 
         <div class="mb-3 form-section">
             <label class="form-label">Nome *</label>
-            <input required id="contact-form-name" type="text" class="form-control" placeholder="Matheus da Silva">
+            <input name="name" required id="contact-form-name" type="text" class="form-control" placeholder="Matheus da Silva">
         </div>
 
         <div class="mb-3 form-section">
             <label class="form-label">E-mail *</label>
-            <input required id="contact-form-email" type="email" class="form-control" placeholder="email@exemplo.com">
+            <input name="email" required id="contact-form-email" type="email" class="form-control" placeholder="email@exemplo.com">
         </div>
 
         <div class="mb-3 form-section" style="width: 350px">
             <label class="form-label" for="guestCount">Assunto *</label>
-            <select id="contact-form-subject" class="form-control">
+            <select name="subject" id="contact-form-subject" class="form-control">
                 <option>Dúvida</option>
                 <option>Sugestão</option>
                 <option>Reclamação</option>
@@ -78,11 +78,11 @@
 
         <div class="mb-3 form-section">
             <label class="form-label">Mensagem *</label>
-            <textarea required id="contact-form-message" type="text" class="form-control" placeholder="Informe a sua mensagem aqui" rows="8"></textarea>
+            <textarea name="message" required id="contact-form-message" type="text" class="form-control" placeholder="Informe a sua mensagem aqui" rows="8"></textarea>
         </div>
 
         <div class="mb-3 form-section">
-            <button class="btn" type="submit">Enviar mensagem</button>
+            <button class="btn" type="submit" name="send_feedback">Enviar mensagem</button>
         </div>
     </form>
 

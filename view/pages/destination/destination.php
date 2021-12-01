@@ -51,7 +51,7 @@
         <?php
         
         include_once('../../../controller/controller.php');
-        $destinationModel->getDestinationById($connection, $_GET['id']);
+        $destinationDAO->getDestinationById($connection, $_GET['id']);
 
         ?>
     </div>

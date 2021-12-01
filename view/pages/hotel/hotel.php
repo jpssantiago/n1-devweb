@@ -50,7 +50,7 @@
     <div class="main-container">
         <?php
             include_once('../../../controller/controller.php');
-            $hotelModel->getHotelById($connection, $_GET['id']);
+            $hotelDAO->getHotelById($connection, $_GET['id']);
         ?>
     </div>
 
